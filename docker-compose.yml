@@ -13,7 +13,7 @@ services:
     networks:
       - dev_titipin_network
     ports:
-     - "9000:80"
+     - "9001:80"
 
   betadine-nginx:
     image: nginx:latest
