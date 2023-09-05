@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+  betadine:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: betadine
+    restart: always
+    volumes:
+      - ./:/var/www
+      - ./php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      
+    networks:
+      - dev_titipin_network
+    ports:
+     - "9000:80"
+
+  betadine-nginx:
+    image: nginx:latest
+    container_name: betadine-nginx
+    restart: always
+    volumes:
+      - ./:/var/www/
+      - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
+      - ./storage/app/public:/var/www/storage/app/public
+
+    depends_on:
+      - betadine
+
+    networks:
+      - dev_titipin_network
+      
+    ports:
+      - "91:80"
+networks:
+  dev_titipin_network:
+    driver: bridge
+    external: true
+    
+     
