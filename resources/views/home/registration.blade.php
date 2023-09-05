@@ -6,12 +6,7 @@
             <h2 class="font-bold font-sans text-white text-center">Isi Data Berikut</h2>
             <form>
                 <div class="space-y-12">
-                    
-
-                    
-
-
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 ">
                             <div class="flex sm:col-span-12">
                                 <label for="nama-ibu"
                                     class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nama
