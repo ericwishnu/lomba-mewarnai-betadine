@@ -31,6 +31,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* && rm -rf /var/www/.git
 # RUN cd /var/www/ && ls -a
-EXPOSE 9000
+EXPOSE 9001
 CMD ["php-fpm"]
 
