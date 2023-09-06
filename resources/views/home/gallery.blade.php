@@ -4,7 +4,10 @@
         <img src="/images/galeri/bg-awan.png" class=" absolute mx-auto w-full">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
             <img src="/images/galeri/galeri-title.png" class="mx-auto h-20">
-
+            <div class="max-w-7xl">
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-6f59b4bd-7b6d-4970-a0f3-68df812ceebf"></div>
+            </div>
             <ul role="list"
                 class="mt-14 grid grid-cols-2  gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
                 <li class="relative">
