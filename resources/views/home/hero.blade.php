@@ -89,7 +89,6 @@
             </div>
         </div>
         <div class="mt-20 ">
-
             <div class="flow-root ">
                 <div class=" rounded-xl  lg:rounded-2xl ">
                     <img src="/images/banner.jpg" alt="App screenshot" width="2432" height="1442"

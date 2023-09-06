@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PesertaController;
+use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,9 +48,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group([
     'middleware' => ['auth', 'CustomRole:admin']
 ], function () {
-    Route::get('superadmin', function () {
-        return 'Halo admin';
-    })->name('superadmin');
+    
+    Route::prefix('superadmin')->name('superadmin.')->group(function () {
+        Route::get('/', [AdminController::class,'index'])->name('dashboard');
+        Route::get('/peserta', [PesertaController::class,'index'])->name('peserta');
+        Route::get('/parenting', [ArticleController::class,'index'])->name('parenting');
+        
+       
+        // Define other admin routes here
+    });
+    
 });
 Route::group([
     'middleware' => ['auth', 'CustomRole:peserta']
