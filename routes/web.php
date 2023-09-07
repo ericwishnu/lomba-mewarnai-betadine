@@ -53,6 +53,7 @@ Route::group([
         Route::get('/', [AdminController::class,'index'])->name('dashboard');
         Route::get('/peserta', [PesertaController::class,'index'])->name('peserta');
         Route::get('/parenting', [ArticleController::class,'index'])->name('parenting');
+        Route::get('/parenting/create', [ArticleController::class,'create'])->name('parenting.create');
         
        
         // Define other admin routes here
