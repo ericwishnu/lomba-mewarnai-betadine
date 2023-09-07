@@ -42,7 +42,7 @@ class LoginController extends Controller
         }
 
         $authUser = Auth::user();
-        if ($authUser->role === 'admin') return redirect()->route('superadmin');
+        if ($authUser->role === 'admin') return redirect()->route('superadmin.dashboard');
         if ($authUser->role === 'peserta') return redirect()->route('peserta');
         if ($authUser->role === 'voter') return redirect()->route('voter');
     }

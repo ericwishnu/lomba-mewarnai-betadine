@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lomba Mewarnai BETADINE</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    @yield('styles')
 </head>
 
 <body class="h-full">
@@ -23,9 +24,7 @@
         </main>
     </div>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script>
-
-</script>
+    @yield('scripts')
 </body>
 
 </html>

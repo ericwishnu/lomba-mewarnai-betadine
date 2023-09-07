@@ -23,7 +23,7 @@
         <div class="mt-8 flow-root">
             <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                    <table class="min-w-full divide-y divide-gray-300">
+                    <table class="min-w-full divide-y divide-gray-300" id="peserta-table">
                         <thead>
                             <tr>
                                 <th scope="col"
@@ -51,7 +51,10 @@
                                 <th scope="col"
                                     class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">
                                     Bukti Pembelian</th>
-
+                                </th>
+                                <th scope="col"
+                                    class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">
+                                    Created At</th>
                                 </th>
                             </tr>
                         </thead>
@@ -60,17 +63,22 @@
                                 <tr>
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-900 sm:pl-0">
                                         {{ $peserta->mother_name }}</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-gray-500">{{ $peserta->kids_name }}
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-gray-500">
+                                        {{ $peserta->kids_name }}
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->kids_age }}
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><a href="#">Show</a></td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><img src="{{ asset($peserta->student_id_url) }}" class="h-20"/>
+                                    </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->email }}</td>
-                                    
+
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->phone }}</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->instagram }}</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><a href="#">Show</a></td>
-                                    
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->instagram }}
+                                    </td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><img src="{{ asset($peserta->purchase_receipt_url) }}"/>
+                                    </td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->created_at }}
+                                    </td>
                                 </tr>
                             @endforeach
                             <!-- More people... -->
@@ -80,4 +88,23 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#peserta-table').DataTable({
+                "order": [[8, "desc"]],
+                "paging": true, // Enable pagination
+                "ordering": true, // Enable column sorting
+                "searching": true
+            });
+        });
+    </script>
+@endsection
+
+@section('styles')
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 @endsection

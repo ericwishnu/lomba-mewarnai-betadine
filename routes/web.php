@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PesertaController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
@@ -43,8 +44,12 @@ Auth::routes();
 // });
 
 Auth::routes();
-
+Route::get('/', [App\Http\Controllers\PagesController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/peserta/success', [App\Http\Controllers\PesertaController::class, 'success'])->name('peserta.sucess');
+Route::post('/peserta/store', [App\Http\Controllers\PesertaController::class, 'store'])->name('peserta.store');
+
+
 Route::group([
     'middleware' => ['auth', 'CustomRole:admin']
 ], function () {

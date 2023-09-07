@@ -25,7 +25,7 @@
                 <a href="#mekanisme" class="text-sm font-semibold leading-6 text-gray-900">MEKANISME</a>
                 <a href="#registrasi" class="text-sm font-semibold leading-6 text-gray-900">REGISTRASI</a>
                 <a href="#playlist" class="text-sm font-semibold leading-6 text-gray-900">PLAYLIST</a>
-                <a href="#perenting" class="text-sm font-semibold leading-6 text-gray-900">PARENTING</a>
+                <a href="#parenting" class="text-sm font-semibold leading-6 text-gray-900">PARENTING</a>
                 <a href="#galeri" class="text-sm font-semibold leading-6 text-gray-900">GALERI</a>
                 <a href="#belanja" class="text-sm font-semibold leading-6 text-gray-900">BELANJA</a>
             </div>
@@ -57,19 +57,19 @@
                         <div class="space-y-2 py-6">
                             <a href="#"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">BERANDA</a>
-                            <a href="#"
+                            <a href="#hadiah"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">HADIAH</a>
-                            <a href="#"
+                            <a href="#mekanisme"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">MEKANISME</a>
-                            <a href="#"
+                            <a href="#registrasi"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">REGISTRASI</a>
-                            <a href="#"
+                            <a href="#playlist"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">PLAYLIST</a>
-                            <a href="#"
+                            <a href="#parenting"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">PARENTING</a>
-                            <a href="#"
+                            <a href="#galeri"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">GALERI</a>
-                            <a href="#"
+                            <a href="#belanja"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">BELANJA</a>
                         </div>
                         {{-- <div class="py-6">

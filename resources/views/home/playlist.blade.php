@@ -1,4 +1,4 @@
-<section id="product">
+<section id="playlist">
 
     <div class="bg-[#ece8e4] ">
         <img src="/images/playlist/bg-awan.png" class=" absolute mx-auto w-full">
@@ -10,41 +10,50 @@
                 <li class="relative">
                     <div
                         class="group aspect-h-10 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                        <img src="/images/playlist/cocomelon.jpeg" alt=""
-                            class="pointer-events-none object-cover group-hover:opacity-75">
-                        <button type="button" class="absolute inset-0 focus:outline-none">
-                            <span class="sr-only">View details</span>
-                        </button>
+                        <a href="https://spotify.link/xAO4HseZTCb" target="_blank">
+                            <img src="/images/playlist/indonesiaku.jpg" alt=""
+                                class="pointer-events-none object-cover group-hover:opacity-75">
+
+                            <button type="button" class="absolute inset-0 focus:outline-none">
+                                <span class="sr-only">View details</span>
+                            </button>
+                        </a>
                     </div>
                 </li>
                 <li class="relative">
                     <div
                         class="group aspect-h-10 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                        <img src="/images/playlist/kidbop.jpeg" alt=""
-                            class="pointer-events-none object-cover group-hover:opacity-75">
-                        <button type="button" class="absolute inset-0 focus:outline-none">
-                            <span class="sr-only">View details</span>
-                        </button>
+                        <a href="https://spotify.link/sNktmahZTCb" target="_blank">
+                            <img src="/images/playlist/yuk-main.jpg" alt=""
+                                class="pointer-events-none object-cover group-hover:opacity-75">
+                            <button type="button" class="absolute inset-0 focus:outline-none">
+                                <span class="sr-only">View details</span>
+                            </button>
+                        </a>
                     </div>
                 </li>
                 <li class="relative">
                     <div
                         class="group aspect-h-10 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                        <img src="/images/playlist/babyshark.jpeg" alt=""
-                            class="pointer-events-none object-cover group-hover:opacity-75">
-                        <button type="button" class="absolute inset-0 focus:outline-none">
-                            <span class="sr-only">View details</span>
-                        </button>
+                        <a href="https://spotify.link/BtOq8ciZTCb" target="_blank">
+                            <img src="/images/playlist/waktunya-tidur.jpg" alt=""
+                                class="pointer-events-none object-cover group-hover:opacity-75">
+                            <button type="button" class="absolute inset-0 focus:outline-none">
+                                <span class="sr-only">View details</span>
+                            </button>
+                        </a>
                     </div>
                 </li>
                 <li class="relative">
                     <div
                         class="group aspect-h-10 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                        <img src="/images/playlist/spongebob.jpeg" alt=""
-                            class="pointer-events-none object-cover group-hover:opacity-75">
-                        <button type="button" class="absolute inset-0 focus:outline-none">
-                            <span class="sr-only">View details</span>
-                        </button>
+                        <a href="https://spotify.link/yXa4zljZTCb" target="_blank">
+                            <img src="/images/playlist/libur-telah-tiba.jpg" alt=""
+                                class="pointer-events-none object-cover group-hover:opacity-75">
+                            <button type="button" class="absolute inset-0 focus:outline-none">
+                                <span class="sr-only">View details</span>
+                            </button>
+                        </a>
                     </div>
                 </li>
             </ul>

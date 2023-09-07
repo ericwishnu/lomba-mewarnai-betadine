@@ -1,7 +1,9 @@
-<section >
+<section>
     <div class="bg-[#ece8e4] sm:-mt-32 -mt-32 md:-mt-60 lg:-mt-96">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 relative">
-            <img src="/images/button-download.png" class="mx-auto h-10 lg:h-20 w-auto z-auto">
+            <a href="/images/template-gambar-a4.jpg" target="_blank" download="template-gambar-a4.jpg">
+                <img src="/images/button-download.png" class="mx-auto h-10 lg:h-20 w-auto z-auto">
+            </a>
             <div id="hadiah">
                 <img src="/images/hadiah.png" class="mx-auto max-w-full z-auto">
             </div>
