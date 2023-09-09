@@ -53,21 +53,38 @@
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200 bg-white">
-                            @foreach ($articles as $article)
+                            @if (count($articles) > 0)
+                                @foreach ($articles as $article)
+                                    <tr>
+                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-900 sm:pl-0">
+                                            {!! Str::limit($article->title, 50, '') !!}</td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-gray-500">
+                                            {{ $article->category }}
+                                        </td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 ">
+                                            <img src="{{ asset($article->image_url) }}" class="20 w-40 object-contain" />
+                                        </td>
+
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                            {!! Str::limit($article->content, 50, '') !!}</td>
+
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                            {{ $article->published_at }}</td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                            {{ $article->created_at }}</td>
+                                        <td><a
+                                                href="{{ route('superadmin.parenting.edit', ['id' => $article->id]) }}">Edit</a>
+                                        </td>
+
+                                    </tr>
+                                @endforeach
+                            @else
                                 <tr>
-                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  text-gray-900 sm:pl-0">
-                                        {{ $article->title }}</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-gray-500">{{ $article->category }}
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $article->image }}
-                                    </td>
-                                    
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $article->content }}</td>
-                                    
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><a href="#">Edit</a></td>
-                                    
+                                    <td colspan="7"
+                                        class="text-center whitespace-nowrap px-3 py-4 text-sm font-medium text-gray-500">
+                                        No Data Available</td>
                                 </tr>
-                            @endforeach
+                            @endif
                             <!-- More people... -->
                         </tbody>
                     </table>

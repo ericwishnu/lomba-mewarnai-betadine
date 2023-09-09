@@ -59,7 +59,9 @@ Route::group([
         Route::get('/peserta', [PesertaController::class,'index'])->name('peserta');
         Route::get('/parenting', [ArticleController::class,'index'])->name('parenting');
         Route::get('/parenting/create', [ArticleController::class,'create'])->name('parenting.create');
-        
+        Route::post('/parenting/store', [ArticleController::class,'store'])->name('parenting.store');
+        Route::get('/parenting/{id}/edit', [ArticleController::class,'edit'])->name('parenting.edit');
+        Route::put('/parenting/{id}/update', [ArticleController::class,'update'])->name('parenting.update');
        
         // Define other admin routes here
     });

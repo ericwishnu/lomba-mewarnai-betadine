@@ -11,7 +11,12 @@ class Article extends Model
     use HasFactory;
     use SoftDeletes;
     protected $fillable = [
-        'title', 'category','image_url', 'published_at', 'status', 'created_by',
+        'title', 'category', 'image_url', 'content', 'slug', 'published_at', 'status', 'created_by',
     ];
-    
+    public function scopePublished($query)
+    {
+        return $query->whereNotNull('published_at')
+            ->where('status', 1)
+            ->orderBy('published_at', 'desc');
+    }
 }

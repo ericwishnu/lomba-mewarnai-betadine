@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class PagesController extends Controller
 {
@@ -23,6 +24,8 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('app');
+        $articles = Article::published()->limit(4)->get();
+        // dd($articles);
+        return view('app',compact('articles'));
     }
 }
