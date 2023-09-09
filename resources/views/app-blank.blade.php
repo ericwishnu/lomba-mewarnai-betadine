@@ -15,8 +15,9 @@
 </head>
 
 <body>
+    @include('home.navigation.navigation')
+
     @yield('content')
-    
     
 
     {{-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script> --}}

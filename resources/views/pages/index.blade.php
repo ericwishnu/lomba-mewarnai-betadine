@@ -1,0 +1,11 @@
+@extends('app')
+@section('content')
+    @include('home.hero')
+    @include('home.mekanism')
+    @include('home.registration')
+    @include('home.playlist')
+    @include('home.parenting')
+    @include('home.gallery')
+    @include('home.belanja')
+    @include('home.footer')
+@endsection

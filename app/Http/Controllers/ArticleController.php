@@ -21,11 +21,7 @@ class ArticleController extends Controller
     {
         return view('admin.articles.create');
     }
-    public function show($slug)
-    {
-        $article = Article::where('slug', $slug)->firstOrFail();
-        return view('home.parenting.show', compact('article'));
-    }
+   
 
     public function store(Request $request)
     {

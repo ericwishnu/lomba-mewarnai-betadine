@@ -26,6 +26,12 @@ class PagesController extends Controller
     {
         $articles = Article::published()->limit(4)->get();
         // dd($articles);
-        return view('app',compact('articles'));
+        return view('pages.index',compact('articles'));
+    }
+    
+    public function showArticle($slug)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+        return view('pages.parenting.show', compact('article'));
     }
 }

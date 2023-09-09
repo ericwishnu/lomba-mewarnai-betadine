@@ -48,7 +48,7 @@ Route::get('/', [App\Http\Controllers\PagesController::class, 'index'])->name('i
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/peserta/success', [App\Http\Controllers\PesertaController::class, 'success'])->name('peserta.sucess');
 Route::post('/peserta/store', [App\Http\Controllers\PesertaController::class, 'store'])->name('peserta.store');
-
+Route::get('/parenting/{slug}', [PagesController::class,'showArticle'])->name('parenting.show');
 
 Route::group([
     'middleware' => ['auth', 'CustomRole:admin']
