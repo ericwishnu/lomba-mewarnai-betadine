@@ -8,16 +8,16 @@
 
                     <div class="mt-16 sm:space-y-2 space-y-4 lg:mt-20 lg:space-y-4">
 
-                        <article class="relative   bg-white/[.3] rounded-2xl p-4 border border-white">
+                        <article class="relative  bg-white rounded-2xl p-4 border border-white">
                             <div class="mb-4">
                                 <span
-                                    class="rounded-full font-medium bg-gray-50 my-4 px-3 py-1.5 text-gray-600 hover:bg-gray-100">{{ $article->category }}</span>
+                                    class="rounded-full font-medium bg-gray-200 my-4 px-3 py-1.5 text-gray-600 hover:bg-gray-100">{{ $article->category }}</span>
                             </div>
-                            <h1 class="font-bold text-2xl text-white"> {{ $article->title }}</h1>
+                            <h1 class="font-bold text-2xl text-gray-900"> {{ $article->title }}</h1>
 
                             <div class="text-sm my-2">
                                 <time datetime="2020-03-16"
-                                    class="text-gray-100">{{ Carbon\Carbon::parse($article->published_at)->format('M d, Y') }}</time>
+                                    class="text-gray-700">{{ Carbon\Carbon::parse($article->published_at)->format('M d, Y') }}</time>
 
                             </div>
                             <img src="{{ $article->image_url }}" alt=""
@@ -30,7 +30,7 @@
                                 </div>
 
 
-                                <div class="text-md text-white "> {!! $article->content !!}</div>
+                                <div class="text-md text-gray-900"> {!! $article->content !!}</div>
                             </div>
                         </article>
 

@@ -34,4 +34,10 @@ class PagesController extends Controller
         $article = Article::where('slug', $slug)->firstOrFail();
         return view('pages.parenting.show', compact('article'));
     }
+
+    public function showArticleList()
+    {
+        $articles = Article::published()->get();
+        return view('pages.parenting.index',compact('articles'));
+    }
 }

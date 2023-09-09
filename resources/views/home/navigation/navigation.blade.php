@@ -19,7 +19,7 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">BERANDA</a>
+            <a href="/" class="text-sm font-semibold leading-6 text-gray-900">BERANDA</a>
             <a href="/#hadiah" class="text-sm font-semibold leading-6 text-gray-900">HADIAH</a>
             <a href="/#mekanisme" class="text-sm font-semibold leading-6 text-gray-900">MEKANISME</a>
             <a href="/#registrasi" class="text-sm font-semibold leading-6 text-gray-900">REGISTRASI</a>

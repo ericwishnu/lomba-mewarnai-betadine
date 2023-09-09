@@ -1,3 +1,5 @@
+@extends('app-blank')
+@section('content')
 <section id="parenting">
     <div class="bg-orange-700 ">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
@@ -38,17 +40,10 @@
                                 </div>
                             </article>
                         @endforeach
-                        <div class="mt-6 text-center justify-center">
-                            <a href="{{ route('parenting') }}"
-                                class="rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm  ">
-                                <img src="/images/parenting/baca-lagi.png" class="h-20  mx-auto" />
-                            
-                            </a>
-                        </div>
                     @else
                         <p class="text-white text-center">No Data Available</p>
 
-                        
+
                     @endif
                     <!-- More posts... -->
                 </div>
@@ -60,3 +55,6 @@
     </div>
 
 </section>
+
+@endsection
+

@@ -18,6 +18,7 @@
     @include('home.navigation.navigation')
 
     @yield('content')
+    @include('home.footer')
     
 
     {{-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script> --}}
