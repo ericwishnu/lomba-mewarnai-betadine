@@ -23,7 +23,7 @@
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
                             <p class="flex-auto text-justify">Beli produk <strong>Betadine di Shopee Betadine Official Shop</strong>
-                                minimal Rp. 20.000 dalam periode 1-30 September 2023</p>
+                                minimal Rp. 50.000 dalam periode 1-30 September 2023</p>
 
                         </dd>
                     </div>
@@ -32,7 +32,7 @@
                             <img src="/images/mekanisme/2-simpan-struk.png" class="h-32 mx-auto">
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                            <p class="flex-auto text-justify">Simpan struk atau bukti pembelian</p>
+                            <p class="flex-auto text-justify">Screenshoot bukti pembelian dari Official Store Betadine di Shopee</p>
 
                         </dd>
                     </div>
