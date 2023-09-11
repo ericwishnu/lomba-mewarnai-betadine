@@ -1,8 +1,8 @@
 <section id="galeri">
 
-    <div class="bg-[#ece8e4] ">
-        <img src="/images/galeri/bg-awan.png" class=" absolute mx-auto w-full">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
+    <div class="bg-[#ece8e4] bg-[url('/images/playlist/bg-awan.png')] bg-cover">
+        {{-- <img src="/images/galeri/bg-awan.png" class=" absolute mx-auto w-full"> --}}
+        <div class="mx-auto max-w-7xl px-4 lg:px-8 py-24 sm:py-32 h-96 min-h-min">
             <img src="/images/galeri/galeri-title.png" class="mx-auto h-20">
             <div class="max-w-7xl">
                 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
