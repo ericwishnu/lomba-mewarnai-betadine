@@ -40,8 +40,8 @@
                         @endforeach
                         <div class="mt-6 text-center justify-center">
                             <a href="{{ route('parenting') }}"
-                                class="rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm  ">
-                                <img src="/images/parenting/baca-lagi.png" class="h-20  mx-auto" />
+                                class=" relative rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm  ">
+                                <img src="/images/parenting/baca-lagi.png" class="h-20  mx-auto z-20" />
                             
                             </a>
                         </div>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="-mt-20">
-            <img src="/images/parenting/bg-rumah.png" alt="">
+            <img src="/images/parenting/bg-rumah.png " alt="">
         </div>
     </div>
 
