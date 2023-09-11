@@ -19,7 +19,7 @@ class PesertaController extends Controller
 
     public function success()
     {
-        return view('berhasil');
+        return view('pages.download');
     }
 
     public function store(Request $request)

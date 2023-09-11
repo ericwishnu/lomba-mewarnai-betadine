@@ -1,5 +1,5 @@
 <section id="parenting">
-    <div class="bg-orange-700 ">
+    <div class="bg-orange-700 z-10">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
             <div class="mx-auto max-w-2xl lg:max-w-4xl">
                 <img src="/images/parenting/parenting-title.png" class="mx-auto h-20">
