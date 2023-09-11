@@ -54,21 +54,21 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10" x-show="open">
                     <div class="space-y-2 py-6">
-                        <a href="#"
+                        <a @click="open = false" href="#" 
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">BERANDA</a>
-                        <a href="#hadiah"
+                        <a @click="open = false" href="#hadiah"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">HADIAH</a>
-                        <a href="#mekanisme"
+                        <a @click="open = false" href="#mekanisme"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">MEKANISME</a>
-                        <a href="#registrasi"
+                        <a @click="open = false" href="#registrasi"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">REGISTRASI</a>
-                        <a href="#playlist"
+                        <a @click="open = false" href="#playlist"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">PLAYLIST</a>
-                        <a href="#parenting"
+                        <a @click="open = false" href="#parenting"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">PARENTING</a>
-                        <a href="#galeri"
+                        <a @click="open = false" href="#galeri"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">GALERI</a>
-                        <a href="#belanja"
+                        <a @click="open = false" href="#belanja"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">BELANJA</a>
                     </div>
                     {{-- <div class="py-6">
