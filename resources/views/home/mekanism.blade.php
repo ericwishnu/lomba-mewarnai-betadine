@@ -15,43 +15,43 @@
                 </h2>
 
             </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24  lg:max-w-none">
                 <dl class="grid max-w-xl grid-cols-1 gap-x-4 gap-y-16 lg:max-w-none lg:grid-cols-4">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mx-4 ">
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             <img src="/images/mekanisme/1-beli.png" class="h-32 mx-auto">
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                            <p class="flex-auto text-justify">Beli produk <strong>Betadine di Shopee Betadine Official Shop</strong>
+                            <p class="flex-auto text-center">Beli produk <strong>Betadine di Shopee Betadine Official Shop</strong>
                                 minimal Rp. 50.000 dalam periode 1-30 September 2023</p>
 
                         </dd>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mx-4">
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             <img src="/images/mekanisme/2-simpan-struk.png" class="h-32 mx-auto">
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                            <p class="flex-auto text-justify">Screenshoot bukti pembelian dari Official Store Betadine di Shopee</p>
+                            <p class="flex-auto text-center">Screenshoot bukti pembelian dari Official Store Betadine di Shopee</p>
 
                         </dd>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mx-4">
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             <img src="/images/mekanisme/3-url.png" class="h-32 mx-auto">
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                            <p class="flex-auto text-justify">Kunjungi lombamewarnaibetadine.com, Klik registrasi, lalu ikuti
+                            <p class="flex-auto text-center">Kunjungi lombamewarnaibetadine.com, Klik registrasi, lalu ikuti
                                 petunjuk yang tertera</p>
 
                         </dd>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mx-4">
                         <dt class="text-base font-semibold leading-7 text-gray-900">
                             <img src="/images/mekanisme/4-upload.png" class="h-32 mx-auto">
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                            <p class="flex-auto text-justify">Upload hasil karya mewarnai ke instagram, tag @betadineindonesia
+                            <p class="flex-auto text-center">Upload hasil karya mewarnai ke instagram, tag @betadineindonesia
                                 sertakan hastag
                                 <strong>#BetadineUnstoppableDreams #JanganBerhenti</strong>
                             </p>
