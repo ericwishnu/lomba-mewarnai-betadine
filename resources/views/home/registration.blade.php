@@ -9,12 +9,12 @@
                 @csrf
                 <div class="space-y-12">
                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 ">
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row sm:col-span-12 mx-4">
                             <label for="nama-ibu"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nama
+                                class="w-full md:w-1/5 lg:basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nama
                                 Ibu
                             </label>
-                            <div class="mt-2 basis-4/5">
+                            <div class="mt-2 w-full md:w-4/5 ">
                                 <input type="text" name="nama_ibu" id="nama-ibu" autocomplete="given-name"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 @error('nama_ibu')
@@ -22,12 +22,12 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row sm:col-span-12   mx-4">
                             <label for="nama-anak"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nama
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nama
                                 Anak
                             </label>
-                            <div class="mt-2 basis-4/5">
+                            <div class="mt-2 w-full md:w-4/5 ">
                                 <input type="text" name="nama_anak" id="nama-anak" autocomplete="given-name"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 @error('nama_anak')
@@ -35,12 +35,12 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row sm:col-span-12  mx-4">
                             <label for="usia-anak"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Usia
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Usia
                                 Anak
                             </label>
-                            <div class="mt-2 basis-4/5">
+                            <div class="mt-2 w-full md:w-4/5 ">
                                 <input type="number" min="1" name="usia_anak" id="usia-anak"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 @error('usia_anak')
@@ -48,28 +48,27 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row sm:col-span-12  mx-4">
                             <label for="kartu-pelajar"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Kartu
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Kartu
                                 Pelajar Anak
                             </label>
-                            <div class="mt-2 basis-3/5">
+                            <div class="mt-2 w-full md:w-4/5 ">
                                 <input type="file" name="kartu_pelajar" id="kartu-pelajar" accept="image/*"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 bg-yellow-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <p class="text-white">(*Maksimal kelas 3 SD)</p>
                                 @error('kartu_pelajar')
                                     <span class="text-white">{{ $message }}</span>
                                 @enderror
                             </div>
-                            <div class="mt-2 basis-1/5 ml-2">
-                                <p class="text-white">(*Maksimal kelas 3 SD)</p>
-                            </div>
+
                         </div>
 
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row sm:col-span-12   mx-4">
                             <label for="email"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Email
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Email
                             </label>
-                            <div class="mt-2 basis-4/5">
+                            <div class="mt-2 w-full md:w-4/5 ">
                                 <input type="email" min="1" name="email" id="email"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 @error('email')
@@ -77,9 +76,9 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row sm:col-span-12   mx-4">
                             <label for="phone"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nomor
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Nomor
                                 Handphone
                             </label>
                             <div class="mt-2 basis-4/5">
@@ -90,11 +89,11 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row  sm:col-span-12 mx-4">
                             <label for="instagram"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Instagram
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Instagram
                             </label>
-                            <div class="mt-2 basis-4/5">
+                            <div class="mt-2  w-full md:w-4/5 ">
                                 <input type="text" min="1" name="instagram" id="instagram"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 @error('instagram')
@@ -102,20 +101,18 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="flex sm:col-span-12">
+                        <div class="flex flex-col md:flex-row  sm:col-span-12 mx-4">
                             <label for="bukti-belanja"
-                                class="basis-1/5 p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Struk
+                                class="w-full md:w-1/5  p-2 font-sans object-center block text-lg font-bold leading-8 text-white">Struk
                                 / Bukti Pembelian Betadine
                             </label>
-                            <div class="mt-2 basis-3/5">
+                            <div class="mt-2  w-full md:w-4/5 ">
                                 <input type="file" name="bukti_belanja" id="bukti-belanja" accept="image/*"
                                     class=" p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 bg-yellow-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <p class="text-white">(*September - Oktober 2023)</p>
                                 @error('bukti_belanja')
                                     <span class="text-white">{{ $message }}</span>
                                 @enderror
-                            </div>
-                            <div class="mt-2 basis-1/5 ml-2">
-                                <p class="text-white">(*September - Oktober 2023)</p>
                             </div>
                         </div>
 
