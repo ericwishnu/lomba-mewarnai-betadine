@@ -1,6 +1,6 @@
 <section id="playlist">
 
-    <div class="bg-[#ece8e4] bg-[url('/images/playlist/bg-awan.png')] bg-cover">
+    <div class="bg-[#ece8e4] bg-[url('/images/playlist/bg-awan-new.png')] bg-cover">
         {{-- <img src="/images/playlist/bg-awan.png" class="absolute mx-auto w-full z-10"> --}}
         <div class="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
             <img src="/images/playlist/playlist-title.png" class="mx-auto h-20">
