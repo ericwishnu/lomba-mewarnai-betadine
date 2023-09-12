@@ -116,8 +116,22 @@
 @endsection
 
 @section('scripts')
-    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace('content');
-    </script>
+<script src="/plugins/ckeditor/ckeditor.js"></script>
+<script>
+    // CKEDITOR.replace('content');
+    ClassicEditor
+        .create(document.querySelector('#content'), {
+
+            // toolbar: ['heading', 'bold', 'italic', 'numberedList', 'bulletedList','htmlEmbed']
+        })
+        .then(editor => {
+            console.log('Editor was initialized', editor);
+
+            // Expose for playing in the console.
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
 @endsection

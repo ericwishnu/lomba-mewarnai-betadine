@@ -22,7 +22,7 @@
                 <div class="inline-block min-w-5xl py-2 px-4 align-middle sm:px-6 lg:px-8 mx-auto ">
                     <div class="border-b border-gray-900/10 pb-12 ">
 
-                        <form action={{ route('superadmin.parenting.update', ['id'=> $article->id]) }} method="POST"
+                        <form action={{ route('superadmin.parenting.update', ['id' => $article->id]) }} method="POST"
                             enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
@@ -100,7 +100,7 @@
                                         class="block text-sm font-medium leading-6 text-gray-900">Published At</label>
                                     <div class="mt-2">
                                         <input type="datetime-local" name="published_at" id="published_at"
-                                            value="{{ $article->published_at  }}"
+                                            value="{{ $article->published_at }}"
                                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                         @error('published_at')
                                             <span class="text-red-500">{{ $message }}</span>
@@ -123,8 +123,22 @@
 @endsection
 
 @section('scripts')
-    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script src="/plugins/ckeditor/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace('content');
+        // CKEDITOR.replace('content');
+        ClassicEditor
+            .create(document.querySelector('#content'), {
+
+                // toolbar: ['heading', 'bold', 'italic', 'numberedList', 'bulletedList','htmlEmbed']
+            })
+            .then(editor => {
+                console.log('Editor was initialized', editor);
+
+                // Expose for playing in the console.
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 @endsection

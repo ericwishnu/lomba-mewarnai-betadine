@@ -35,9 +35,9 @@
                                 <th scope="col"
                                     class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">
                                     Image</th>
-                                <th scope="col"
+                                {{-- <th scope="col"
                                     class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">
-                                    Content Preview</th>
+                                    Content Preview</th> --}}
                                 <th scope="col"
                                     class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">
                                     Published At</th>
@@ -65,8 +65,8 @@
                                             <img src="{{ asset($article->image_url) }}" class="20 w-40 object-contain" />
                                         </td>
 
-                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                            {!! Str::limit($article->content, 50, '') !!}</td>
+                                        {{-- <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                            {!! Str::limit($article->content, 50, '') !!}</td> --}}
 
                                         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                             {{ $article->published_at }}</td>
