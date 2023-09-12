@@ -63,6 +63,8 @@ Route::group([
         Route::post('/parenting/store', [ArticleController::class,'store'])->name('parenting.store');
         Route::get('/parenting/{id}/edit', [ArticleController::class,'edit'])->name('parenting.edit');
         Route::put('/parenting/{id}/update', [ArticleController::class,'update'])->name('parenting.update');
+        Route::get('/profile/edit', [AdminController::class,'editProfile'])->name('profile.edit');
+        Route::post('/password/update', [AdminController::class,'updatePassword'])->name('password.update');
        
         // Define other admin routes here
     });
