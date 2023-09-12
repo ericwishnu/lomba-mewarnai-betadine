@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="bg-white rounded-3xl m-4">
-                        <h2 class="p-10 text-xl font-bold text-center">BELANJA PRODUK BETADINE URTI CARE</h2>
+                        <h2 class="p-10 text-xl font-bold text-center">PRODUK BETADINE LAINNYA</h2>
                         <div class="grid grid-cols-1 lg:grid-cols-6">
                             <div class="p-6 lg:col-span-2 ">
                                 <div class="bg-gray-200 mx-4 p-6">
