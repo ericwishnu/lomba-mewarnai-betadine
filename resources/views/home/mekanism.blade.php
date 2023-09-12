@@ -23,7 +23,7 @@
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
                             <p class="flex-auto text-center">Beli produk <strong>Betadine di Shopee Betadine Official Shop</strong>
-                                minimal Rp. 50.000 dalam periode 1-30 September 2023</p>
+                                minimal Rp. 50.000 dalam periode September - Oktober 2023</p>
 
                         </dd>
                     </div>
@@ -51,7 +51,7 @@
                             <img src="/images/mekanisme/4-upload.png" class="h-32 mx-auto">
                         </dt>
                         <dd class="mt-2 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                            <p class="flex-auto text-center">Upload hasil karya mewarnai ke instagram, tag @betadineindonesia
+                            <p class="flex-auto text-center">Upload hasil karya mewarnai ke instagram, tag <strong>@betadineindonesia</strong>
                                 sertakan hastag
                                 <strong>#BetadineUnstoppableDreams #JanganBerhenti</strong>
                             </p>
