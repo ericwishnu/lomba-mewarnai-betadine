@@ -68,14 +68,21 @@
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->kids_age }}
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><img src="{{ asset($peserta->student_id_url) }}" class="h-20"/>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                        <a href="{{ asset($peserta->student_id_url) }}" target="_blank">
+                                            <img src="{{ asset($peserta->student_id_url) }}" class="h-20" />
+                                        </a>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->email }}</td>
 
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->phone }}</td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->instagram }}
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><img src="{{ asset($peserta->purchase_receipt_url) }}"/>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                        <a href="{{ asset($peserta->purchase_receipt_url) }}" target="_blank">
+                                            <img
+                                            src="{{ asset($peserta->purchase_receipt_url) }}" />
+                                        </a>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ $peserta->created_at }}
                                     </td>
@@ -96,7 +103,9 @@
     <script>
         $(document).ready(function() {
             $('#peserta-table').DataTable({
-                "order": [[8, "desc"]],
+                "order": [
+                    [8, "desc"]
+                ],
                 "paging": true, // Enable pagination
                 "ordering": true, // Enable column sorting
                 "searching": true
@@ -106,5 +115,5 @@
 @endsection
 
 @section('styles')
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 @endsection
