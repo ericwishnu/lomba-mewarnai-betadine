@@ -72,7 +72,7 @@ class PesertaController extends Controller
         $peserta['phone'] = $data['phone'];
         $peserta['instagram'] = $data['instagram'];
         $peserta['student_id_url'] =  Storage::url($kartuPelajarFilePath);
-        $peserta['purchase_receipt_url'] =  Storage::url($kartuPelajarFilePath);
+        $peserta['purchase_receipt_url'] =  Storage::url($buktiBelanjaFilePath);
 
         Peserta::create($peserta);
 
