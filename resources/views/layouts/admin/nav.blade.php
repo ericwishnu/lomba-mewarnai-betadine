@@ -81,7 +81,7 @@
     >
       <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3" :class="{ 'flex' : !menuIsOpen, 'hidden' : menuIsOpen === false }">
         <!-- Current: "bg-orange-700 text-white", Default: "text-white hover:bg-orange-500 hover:bg-opacity-75" -->
-        <a href="{{ route('superadmin.dashboard') }}" class= text-white {{ Route::currentRouteName() == 'superadmin.dashboard' ? 'bg-orange-700' : 'hover:bg-orange-500 hover:bg-opacity-75' }}  block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="{{ route('superadmin.dashboard') }}" class="text-white {{ Route::currentRouteName() == 'superadmin.dashboard' ? 'bg-orange-700' : 'hover:bg-orange-500 hover:bg-opacity-75' }}  block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
         <a href="{{ route('superadmin.peserta') }}" class="text-white {{ Route::currentRouteName() == 'superadmin.peserta' ? 'bg-orange-700' : 'hover:bg-orange-500 hover:bg-opacity-75' }}  block rounded-md px-3 py-2 text-base font-medium">Peserta</a>
         <a href="{{ route('superadmin.parenting') }}" class="text-white {{ Route::currentRouteName() == 'superadmin.parenting' ? 'bg-orange-700' : 'hover:bg-orange-500 hover:bg-opacity-75' }} block rounded-md px-3 py-2 text-base font-medium">Projects</a>
         
